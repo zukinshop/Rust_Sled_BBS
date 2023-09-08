@@ -1,0 +1,18 @@
+<html>
+<head>
+  <meta charset ="utf-8">
+  <title>sled掲示板</title>
+</head>
+<body>
+    <p>sled掲示板</p><br>
+
+    <form method="post" action="/">
+      <input type="text" name="input_text" value=""><br>
+      <input type="submit" name="button" value="Send"><br>
+    </form>
+
+    {%for i in data.iter().rev()%}
+    <p>{{i}}</p>
+    {%endfor%}
+</body>
+<html>
